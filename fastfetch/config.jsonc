@@ -1,0 +1,157 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "file",
+    "source": "%USERPROFILE%/.config/fastfetch/ascii.txt",
+    "color": {
+      "1": "#0FE1FA",
+      "2": "#2FD2F6",
+      "3": "#52C1F0",
+      "4": "#75B0EA",
+      "5": "#8F9FE4",
+      "6": "#B086DE",
+      "7": "#D06FD8",
+      "8": "#F058D1",
+      "9": "#FF1A78",
+    },
+    "padding": {
+      "top": 0,
+      "right": 2,
+    },
+  },
+  "display": {
+    "separator": " ",
+  },
+
+  "modules": [
+    "break",
+    {
+      "type": "title",
+      "color": {
+        "user": "#f285d4",
+        "at": "#CDD6F4",
+        "host": "#89DCEB",
+      },
+    },
+    {
+      "type": "custom",
+      "format": "╭───────────────────── Hardware ─────────────────────╮",
+      "outputColor": "#4CC9F0",
+    },
+    {
+      "type": "host",
+      "key": "  󰌢 Host    ",
+      "keyColor": "#e0af68",
+      "format": "{vendor} {name} ({version})",
+    },
+    {
+      "type": "cpu",
+      "key": "   CPU     ",
+      "keyColor": "#F5C2E7",
+      "format": "{name}",
+    },
+    {
+      "type": "gpu",
+      "key": "  󰚗 GPU     ",
+      "keyColor": "#FAB387",
+      "format": "{name}",
+    },
+    {
+      "type": "memory",
+      "key": "   Memory  ",
+      "keyColor": "#FFA4A4",
+      "format": "{used} / {total} ({percentage})",
+    },
+    {
+      "type": "disk",
+      "key": "   Disk    ",
+      "keyColor": "#94E2D5",
+      "format": "{name} {size-used} / {size-total} ({size-percentage}) - {filesystem}",
+    },
+    {
+      "type": "battery",
+      "key": "   Battery ",
+      "keyColor": "#A6E3A1",
+      "format": "{capacity} [{status}]",
+    },
+    {
+      "type": "display",
+      "key": "  󰍹 Display ",
+      "keyColor": "#CBA6F7",
+      "format": "{width}x{height} in {inch}″ @ {refresh-rate}Hz",
+    },
+    {
+      "key": "   Sound   ",
+      "type": "sound",
+      "keyColor": "#F2E2B1",
+    },
+    {
+      "type": "custom",
+      "format": "╰────────────────────────────────────────────────────╯",
+      "outputColor": "#4CC9F0",
+    },
+    {
+      "type": "custom",
+      "format": "╭───────────────────── Software ─────────────────────╮",
+      "outputColor": "#D667CC",
+    },
+    {
+      "type": "os",
+      "key": "   OS      ", // change the OS icon if u use a different one
+      "keyColor": "#89DCEB",
+      "format": "{pretty-name}",
+    },
+    {
+      "type": "kernel",
+      "key": "   Kernel  ",
+      "keyColor": "#f07d92",
+    },
+    {
+      "type": "uptime",
+      "key": "   Uptime  ",
+      "keyColor": "#9ece6a",
+    },
+    {
+      "type": "localip",
+      "key": "  󰀂 Local IP",
+      "keyColor": "#74C7EC",
+    },
+    {
+      "type": "theme",
+      "key": "   Theme   ",
+      "format": "Windows {theme1}",
+      "keyColor": "#e0af68",
+    },
+    {
+      "type": "custom",
+      "key": "   Shell   ",
+      "format": "Windows PowerShell 5.1.26100.7462", //hardcoded this because its kinda laggy, remove this line and change "custom" to "shell"
+      "keyColor": "#bb9af7",
+    },
+    {
+      "type": "editor",
+      "key": "  󰅴 Editor  ",
+      "format": "Visual Studio Code {version}",
+      "keyColor": "#7dcfff",
+    },
+    {
+      "type": "font",
+      "key": "   Font    ",
+      "format": "{font1}",
+      "keyColor": "#94e2d5",
+    },
+    {
+      "type": "dateTime",
+      "key": "  󰥔 Time    ",
+      "keyColor": "#EBD6FB",
+      "format": "{23}-{4}-{1} | {14}:{18}:{20}",
+    },
+    {
+      "type": "custom",
+      "format": "╰─────────────────────────────── \u001b[38;2;245;194;231m \u001b[38;2;137;220;235m \u001b[38;2;249;226;175m \u001b[38;2;203;166;247m󰜈 \u001b[38;2;243;139;168m \u001b[38;2;166;227;161m \u001b[38;2;250;179;135m󰊢 \u001b[38;2;235;160;172m \u001b[38;2;148;226;213m \u001b[38;2;214;103;204m──╯",
+      "outputColor": "#D667CC",
+    },
+    "break",
+  ],
+}
