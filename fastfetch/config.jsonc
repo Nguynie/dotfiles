@@ -25,7 +25,6 @@
   },
 
   "modules": [
-    "break",
     {
       "type": "title",
       "color": {
@@ -124,9 +123,13 @@
       "keyColor": "#e0af68",
     },
     {
-      "type": "custom",
+      "type": "wm",
+      "key": "   WM      ",
+    },
+
+    {
+      "type": "shell",
       "key": "   Shell   ",
-      "format": "Windows PowerShell 5.1.26100.7462", //hardcoded this because its kinda laggy, remove this line and change "custom" to "shell"
       "keyColor": "#bb9af7",
     },
     {
