@@ -6,7 +6,7 @@ This collection contains my custom settings to optimize and beautify the termina
 
 Here is a glimpse of my current terminal setup:
 
-![Terminal Preview](./screenshots/terminal.png)
+![Terminal Preview](./screenshots/terminal_preview.png)
 
 ## Components
 
